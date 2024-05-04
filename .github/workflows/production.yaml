@@ -7,17 +7,17 @@ on:
     branches:
       - main
 jobs:
-Test-NextJS:
-  runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Install dependeces
-      - run: npm install 
-      - name: Run tests
-      - run: npm run test
+  Test-NextJS:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - uses: actions/setup-node@v4
+          with:
+            node-version: '20'
+        - name: Install dependeces
+        - run: npm install 
+        - name: Run tests
+        - run: npm run test
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:
