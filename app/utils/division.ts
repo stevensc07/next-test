@@ -1,4 +1,4 @@
-import { CloudSearch } from "aws-sdk"
+
 
 export function division(a: number, b: number) {
  if(b == 0){
